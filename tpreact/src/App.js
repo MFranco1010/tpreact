@@ -1,6 +1,5 @@
 import './App.css';
 import { Nav } from './components/Nav';
-import { Foot } from './components/Foot';
 import { Cont } from './components/Cont';
 
 function App() {
