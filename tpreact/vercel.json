@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-        "src": "tpreact/public/**",
+        "src": "tpreact/public/index.html",
         "use": "@vercel/static"
         }
     ],
