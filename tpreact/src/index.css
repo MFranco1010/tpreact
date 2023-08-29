@@ -68,7 +68,7 @@ code {
 
 .card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   border-radius: 10px;
   background-color: rgb(170, 155, 72);
   padding: 10px;
@@ -79,10 +79,66 @@ code {
 .img {
   border-radius: 10px;
   grid-column: 1;
+  grid-row: 1;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-p{
+h1{
+  margin-top: 10px;
+  font-family: 'Lisu Bosa', serif;
+  font-size: larger;
+  grid-row: 1;
   grid-column: 2;
-  
+}
+
+p{
+  font-family: 'Lisu Bosa', serif;
+  font-size: medium;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.lista {
+  font-family: 'Lisu Bosa', serif;
+  font-size: x-large;
+  list-style-type: none;
+  margin-left: 100px;
+}
+
+.li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.li::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.li.reloj::before {
+  background-image: url('/public/reloj1.png');
+  background-size: cover;
+}
+
+.li.sal::before {
+  background-image: url('/public/sal1.png');
+  background-size: cover;
+}
+
+.li.manteca::before {
+  background-image: url('/public/manteca1.png');
+  background-size: cover;
+}
+
+.li.harina::before{
+  background-image: url('/public/harina2.png');
+  background-size: cover;
 }
