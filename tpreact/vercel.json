@@ -1,12 +1,12 @@
 {
     "version": 2,
     "builds": [
-        {
-        "src": "tpreact/public/index.html",
+    {
+        "src": "tpreact/public/**",
         "use": "@vercel/static"
-        }
+    }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/tpreact/public/$1" }
+    { "src": "/(.*)", "dest": "/tpreact/public/index.html" }
     ]
 }
