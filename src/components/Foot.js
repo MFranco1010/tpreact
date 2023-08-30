@@ -9,7 +9,7 @@ export const Foot = () => {
             </ul>
             <ul className='ficons lista'>
                 <li title="Github" className='li git'><a className='ftext' href="https://github.com/MFranco1010/tpreact">Github</a></li>
-                <li title="Vercel" className='li ver'><a className='ftext' href="https://tpreact-franco.vercel.app/">Vercel</a></li>
+                <li title="Vercel" className='li ver'><a className='ftext' href="https://tpreact-ten.vercel.app/">Vercel</a></li>
             </ul>
         </div>
     )
