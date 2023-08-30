@@ -102,22 +102,23 @@ p{
 
 .lista {
   font-family: 'Lisu Bosa', serif;
-  font-size: x-large;
+  font-size: 20px;
   list-style-type: none;
-  margin-left: 100px;
+  margin-left: 40px;
 }
 
 .li {
+  padding: 3px;
   position: relative;
-  padding-left: 30px;
+  padding-left: 25px;
   margin-bottom: 10px;
 }
 
 .li::before {
   content: "";
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   left: 0;
   top: 5px;
@@ -139,6 +140,11 @@ p{
 }
 
 .li.harina::before{
-  background-image: url('/public/harina2.png');
+  background-image: url('/public/harina3.png');
+  background-size: cover;
+}
+
+.li.huevos::before{
+  background-image: url('/public/huevos.png');
   background-size: cover;
 }
