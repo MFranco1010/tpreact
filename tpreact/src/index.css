@@ -51,8 +51,28 @@ code {
 }
 
 .footer{
-  background-color: rgba(195, 0, 255, 0.7);
-  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(54, 34, 58, 0.986);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  height: 150px;
+  justify-content: space-around;
+}
+
+.ftext {
+  font-family: 'Lisu Bosa', serif;
+  font-size: large;
+  list-style-type: none;
+  color: white;
+}
+
+.ficons {
+  grid-row: 1;
+  grid-column: 3;
+  width: 90px;
+  padding: 20px;
 }
 
 .cont {
@@ -68,7 +88,7 @@ code {
 
 .card {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 1fr);
   border-radius: 10px;
   background-color: rgb(170, 155, 72);
   padding: 10px;
@@ -146,5 +166,15 @@ p{
 
 .li.huevos::before{
   background-image: url('/public/huevos.png');
+  background-size: cover;
+}
+
+.li.git::before{
+  background-image: url('/public/git.png');
+  background-size: cover;
+}
+
+.li.ver::before{
+  background-image: url('/public/vercel.png');
   background-size: cover;
 }

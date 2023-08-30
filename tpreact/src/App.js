@@ -1,16 +1,14 @@
 import './App.css';
 import { Nav } from './components/Nav';
 import { Cont } from './components/Cont';
+import { Foot } from './components/Foot';
 
 function App() {
   return (
     <div className="App">
-      <header>
         <Nav />
-      </header>
-      <div>
         <Cont />
-      </div>
+        <Foot img="/public/git.png" />
     </div>
   );
 }
